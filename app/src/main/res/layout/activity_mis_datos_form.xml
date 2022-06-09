@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="DATOS PERSONALES"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/MD_dni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DNI"
+                android:padding="20dp" />
+            <RadioGroup
+                android:id="@+id/MD_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sexo"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEXO"
+                    android:padding="5dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:checked="true"
+                    android:padding="5dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:padding="5dp"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/MD_fechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de Nacimiento AAAA-MM-DD"
+                android:inputType="date"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Edad"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Direccion"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_obraSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Obra Social"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Peso"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Altura ej: 1.80"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_grupoSanguineo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Grupo Sanguíneo?"
+                android:padding="20dp" />
+
+            <!--<EditText
+                android:id="@+id/MD_fuma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fuma?"
+                android:padding="20dp" />-->
+            <RadioGroup
+                android:id="@+id/MD_fuma"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:hint="Fuma?"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="FUMA?" />
+
+                <RadioButton
+                    android:id="@+id/fumaRB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="5dp"
+                    android:text="Sí" />
+
+                <RadioButton
+                    android:id="@+id/fumaRB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="No" />
+            </RadioGroup>
+
+            <!--<EditText
+                android:id="@+id/MD_bebeAlcohol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bebe Alcohol?"
+                android:padding="20dp" />-->
+            <RadioGroup
+                android:id="@+id/MD_bebeAlcohol"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:hint="Bebe Alcohol?"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="BEBE ALCOHOL?" />
+
+                <RadioButton
+                    android:id="@+id/bebeRB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="5dp"
+                    android:text="Sí" />
+
+                <RadioButton
+                    android:id="@+id/bebeRB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="No" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/MD_alergia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alergia"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_medicacionCronica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medicación Crónica"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_nacionalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nacionalidad"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_ocupacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ocupación"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/MD_estadoCivil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Estado Civil"
+                android:padding="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_misdatos"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="10dp"
+        android:background="#FF2196F3"
+        android:text="Cargar Datos"
+        android:textSize="18sp" />
+</LinearLayout>

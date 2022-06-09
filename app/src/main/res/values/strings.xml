@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">miHCE</string>
+    <string name="title_activity_user_login">user_login</string>
+    <string name="prompt_nombre">Nombre</string>
+    <string name="prompt_apellido">Apellido</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Acceder o Registrarse</string>
+    <string name="action_sign_in_short">Acceder</string>
+    <string name="welcome">"Bienvenido !"</string>
+    <string name="invalid_username">Usuario inválido</string>
+    <string name="invalid_password">El Password debe ser de 6 caracteres o más</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_user_registration">user_registration</string>
+    <string name="register">Registrarse</string>
+</resources>
